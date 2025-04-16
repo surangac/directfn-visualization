@@ -106,7 +106,7 @@ const NewArchitectureView = () => {
           <div className="absolute top-[340px] left-[75%] w-[60px] h-[1px] bg-blue-400"></div>
           
           {/* Cache Layer */}
-          <div className="absolute top-[340px] left-0 right-0 flex justify-center">
+          <div className="absolute top-[370px] left-0 right-0 flex justify-center">
             <div className="w-[500px] h-[40px] bg-red-50 rounded-md border border-red-200 flex items-center justify-center shadow-sm">
               <Cpu size={18} className="text-red-600 mr-2" />
               <span className="font-medium text-red-800">Distributed Cache Layer (Redis)</span>
@@ -114,7 +114,7 @@ const NewArchitectureView = () => {
           </div>
           
           {/* Streaming/API Services Layer */}
-          <div className="absolute top-[400px] left-0 right-0 flex justify-center">
+          <div className="absolute top-[430px] left-0 right-0 flex justify-center">
             <div className="w-[500px] px-2 py-3 bg-yellow-50 rounded-md border border-yellow-200 flex flex-col items-center shadow-sm">
               <div className="flex items-center mb-2">
                 <span className="font-bold text-yellow-800">API & Delivery Services</span>
@@ -142,12 +142,12 @@ const NewArchitectureView = () => {
           </div>
           
           {/* Arrows Down */}
-          <div className="absolute top-[460px] left-[30%] w-0 h-0 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-t-[12px] border-t-yellow-300"></div>
-          <div className="absolute top-[460px] left-[50%] w-0 h-0 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-t-[12px] border-t-yellow-300"></div>
-          <div className="absolute top-[460px] left-[70%] w-0 h-0 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-t-[12px] border-t-yellow-300"></div>
+          <div className="absolute top-[490px] left-[30%] w-0 h-0 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-t-[12px] border-t-yellow-300"></div>
+          <div className="absolute top-[490px] left-[50%] w-0 h-0 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-t-[12px] border-t-yellow-300"></div>
+          <div className="absolute top-[490px] left-[70%] w-0 h-0 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-t-[12px] border-t-yellow-300"></div>
           
           {/* Client Layer */}
-          <div className="absolute top-[480px] left-0 right-0 flex justify-center space-x-4">
+          <div className="absolute top-[510px] left-0 right-0 flex justify-center space-x-4">
             <div className="w-[130px] h-[70px] bg-blue-100 rounded-md border border-blue-300 flex flex-col items-center justify-center shadow-sm">
               <span className="font-medium text-blue-800">Web Apps</span>
               <span className="text-xs text-blue-600">React, Angular</span>
