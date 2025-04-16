@@ -19,7 +19,7 @@ const NewArchitectureView = () => {
       </div>
       
       {/* Architecture Diagram */}
-      <div className="relative w-full h-[570px] bg-gradient-to-b from-blue-50 to-indigo-50 rounded-lg border border-blue-200 mb-6 overflow-hidden">
+      <div className="relative w-full h-[600px] bg-gradient-to-b from-blue-50 to-indigo-50 rounded-lg border border-blue-200 mb-6 overflow-hidden">
         <div className="absolute inset-0 p-6">
           {/* Exchanges Layer */}
           <div className="absolute top-[30px] left-0 right-0 flex justify-center">
@@ -58,15 +58,15 @@ const NewArchitectureView = () => {
             </div>
           </div>
           
-          {/* Microservices Backend */}
+          {/* Microservices Backend - Core Processing */}
           <div className="absolute top-[260px] left-0 right-0 flex justify-center">
             <div className="w-[500px] px-2 py-3 bg-indigo-50 rounded-md border border-indigo-200 flex flex-col items-center shadow-sm">
               <div className="flex items-center mb-3">
                 <Boxes size={20} className="text-indigo-700 mr-2" />
-                <span className="font-bold text-indigo-800">Microservices Backend</span>
+                <span className="font-bold text-indigo-800">Core Processing Services</span>
               </div>
               
-              <div className="grid grid-cols-4 gap-2 w-full mb-2">
+              <div className="grid grid-cols-4 gap-2 w-full">
                 <div className="bg-indigo-100 p-2 rounded border border-indigo-200 text-center">
                   <div className="text-xs font-medium text-indigo-800">Normalization(DM)</div>
                   <div className="text-[10px] text-indigo-600">Service</div>
@@ -81,25 +81,6 @@ const NewArchitectureView = () => {
                 </div>
                 <div className="bg-indigo-100 p-2 rounded border border-indigo-200 text-center">
                   <div className="text-xs font-medium text-indigo-800">Analytics(Technical Indicators)</div>
-                  <div className="text-[10px] text-indigo-600">Service</div>
-                </div>
-              </div>
-              
-              <div className="grid grid-cols-4 gap-2 w-full">
-                <div className="bg-indigo-100 p-2 rounded border border-indigo-200 text-center">
-                  <div className="text-xs font-medium text-indigo-800">Streaming</div>
-                  <div className="text-[10px] text-indigo-600">Service</div>
-                </div>
-                <div className="bg-indigo-100 p-2 rounded border border-indigo-200 text-center">
-                  <div className="text-xs font-medium text-indigo-800">REST API</div>
-                  <div className="text-[10px] text-indigo-600">Gateway</div>
-                </div>
-                <div className="bg-indigo-100 p-2 rounded border border-indigo-200 text-center">
-                  <div className="text-xs font-medium text-indigo-800">WebSocket</div>
-                  <div className="text-[10px] text-indigo-600">Service</div>
-                </div>
-                <div className="bg-indigo-100 p-2 rounded border border-indigo-200 text-center">
-                  <div className="text-xs font-medium text-indigo-800">Monitoring</div>
                   <div className="text-[10px] text-indigo-600">Service</div>
                 </div>
               </div>
@@ -125,20 +106,48 @@ const NewArchitectureView = () => {
           <div className="absolute top-[340px] left-[75%] w-[60px] h-[1px] bg-blue-400"></div>
           
           {/* Cache Layer */}
-          <div className="absolute top-[360px] left-0 right-0 flex justify-center">
+          <div className="absolute top-[340px] left-0 right-0 flex justify-center">
             <div className="w-[500px] h-[40px] bg-red-50 rounded-md border border-red-200 flex items-center justify-center shadow-sm">
               <Cpu size={18} className="text-red-600 mr-2" />
               <span className="font-medium text-red-800">Distributed Cache Layer (Redis)</span>
             </div>
           </div>
           
+          {/* Streaming/API Services Layer */}
+          <div className="absolute top-[400px] left-0 right-0 flex justify-center">
+            <div className="w-[500px] px-2 py-3 bg-yellow-50 rounded-md border border-yellow-200 flex flex-col items-center shadow-sm">
+              <div className="flex items-center mb-2">
+                <span className="font-bold text-yellow-800">API & Delivery Services</span>
+              </div>
+              
+              <div className="grid grid-cols-4 gap-2 w-full">
+                <div className="bg-yellow-100 p-2 rounded border border-yellow-200 text-center">
+                  <div className="text-xs font-medium text-yellow-800">Streaming</div>
+                  <div className="text-[10px] text-yellow-600">Service</div>
+                </div>
+                <div className="bg-yellow-100 p-2 rounded border border-yellow-200 text-center">
+                  <div className="text-xs font-medium text-yellow-800">REST API</div>
+                  <div className="text-[10px] text-yellow-600">Gateway</div>
+                </div>
+                <div className="bg-yellow-100 p-2 rounded border border-yellow-200 text-center">
+                  <div className="text-xs font-medium text-yellow-800">WebSocket</div>
+                  <div className="text-[10px] text-yellow-600">Service</div>
+                </div>
+                <div className="bg-yellow-100 p-2 rounded border border-yellow-200 text-center">
+                  <div className="text-xs font-medium text-yellow-800">Monitoring</div>
+                  <div className="text-[10px] text-yellow-600">Service</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
           {/* Arrows Down */}
-          <div className="absolute top-[420px] left-[30%] w-0 h-0 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-t-[12px] border-t-red-300"></div>
-          <div className="absolute top-[420px] left-[50%] w-0 h-0 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-t-[12px] border-t-red-300"></div>
-          <div className="absolute top-[420px] left-[70%] w-0 h-0 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-t-[12px] border-t-red-300"></div>
+          <div className="absolute top-[460px] left-[30%] w-0 h-0 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-t-[12px] border-t-yellow-300"></div>
+          <div className="absolute top-[460px] left-[50%] w-0 h-0 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-t-[12px] border-t-yellow-300"></div>
+          <div className="absolute top-[460px] left-[70%] w-0 h-0 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-t-[12px] border-t-yellow-300"></div>
           
           {/* Client Layer */}
-          <div className="absolute top-[440px] left-0 right-0 flex justify-center space-x-4">
+          <div className="absolute top-[480px] left-0 right-0 flex justify-center space-x-4">
             <div className="w-[130px] h-[70px] bg-blue-100 rounded-md border border-blue-300 flex flex-col items-center justify-center shadow-sm">
               <span className="font-medium text-blue-800">Web Apps</span>
               <span className="text-xs text-blue-600">React, Angular</span>
@@ -147,9 +156,9 @@ const NewArchitectureView = () => {
               <span className="font-medium text-green-800">Mobile Apps</span>
               <span className="text-xs text-green-600">iOS, Android</span>
             </div>
-            <div className="w-[130px] h-[70px] bg-yellow-100 rounded-md border border-yellow-300 flex flex-col items-center justify-center shadow-sm">
-              <span className="font-medium text-yellow-800">API Clients</span>
-              <span className="text-xs text-yellow-600">Third-party</span>
+            <div className="w-[130px] h-[70px] bg-indigo-100 rounded-md border border-indigo-300 flex flex-col items-center justify-center shadow-sm">
+              <span className="font-medium text-indigo-800">API Clients</span>
+              <span className="text-xs text-indigo-600">Third-party</span>
             </div>
           </div>
           
