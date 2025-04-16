@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import OldArchitectureView from './views/OldArchitectureView';
+import NewArchitectureView from './views/NewArchitectureView';
 import DataFlowView from './views/DataFlowView';
 import CoverageView from './views/CoverageView';
 import ClientsView from './views/ClientsView';
@@ -8,7 +10,7 @@ import TeamView from './views/TeamView';
  * Main component that integrates all views for the DirectFN Market Data Backend visualization
  */
 const MarketDataFlow = () => {
-  const [viewMode, setViewMode] = useState('flow'); // 'flow', 'coverage', 'clients', 'team'
+  const [viewMode, setViewMode] = useState('old'); // 'old', 'new', 'flow', 'coverage', 'clients', 'team'
 
   return (
     <div className="flex flex-col items-center p-6 bg-gray-50 rounded-lg shadow-lg text-gray-800 max-w-4xl mx-auto">
@@ -18,32 +20,46 @@ const MarketDataFlow = () => {
       {/* Tab Navigation */}
       <div className="flex justify-center mb-6 flex-wrap gap-2">
         <button 
+          onClick={() => setViewMode('old')} 
+          className={`px-4 py-2 rounded-md font-medium ${viewMode === 'old' ? 'bg-gray-600 text-white' : 'bg-white border border-gray-300'}`}
+        >
+          Legacy Architecture
+        </button>
+        <button 
+          onClick={() => setViewMode('new')} 
+          className={`px-4 py-2 rounded-md font-medium ${viewMode === 'new' ? 'bg-blue-600 text-white' : 'bg-white border border-gray-300'}`}
+        >
+          Modern Architecture
+        </button>
+        <button 
           onClick={() => setViewMode('flow')} 
-          className={`px-4 py-2 rounded-md font-medium ${viewMode === 'flow' ? 'bg-blue-600 text-white' : 'bg-white border border-gray-300'}`}
+          className={`px-4 py-2 rounded-md font-medium ${viewMode === 'flow' ? 'bg-indigo-600 text-white' : 'bg-white border border-gray-300'}`}
         >
           Data Flow
         </button>
         <button 
           onClick={() => setViewMode('coverage')} 
-          className={`px-4 py-2 rounded-md font-medium ${viewMode === 'coverage' ? 'bg-blue-600 text-white' : 'bg-white border border-gray-300'}`}
+          className={`px-4 py-2 rounded-md font-medium ${viewMode === 'coverage' ? 'bg-green-600 text-white' : 'bg-white border border-gray-300'}`}
         >
           Coverage
         </button>
         <button 
           onClick={() => setViewMode('clients')} 
-          className={`px-4 py-2 rounded-md font-medium ${viewMode === 'clients' ? 'bg-blue-600 text-white' : 'bg-white border border-gray-300'}`}
+          className={`px-4 py-2 rounded-md font-medium ${viewMode === 'clients' ? 'bg-yellow-600 text-white' : 'bg-white border border-gray-300'}`}
         >
           Products & Clients
         </button>
         <button 
           onClick={() => setViewMode('team')} 
-          className={`px-4 py-2 rounded-md font-medium ${viewMode === 'team' ? 'bg-blue-600 text-white' : 'bg-white border border-gray-300'}`}
+          className={`px-4 py-2 rounded-md font-medium ${viewMode === 'team' ? 'bg-purple-600 text-white' : 'bg-white border border-gray-300'}`}
         >
           Our Team
         </button>
       </div>
       
       {/* Render the appropriate view based on selected tab */}
+      {viewMode === 'old' && <OldArchitectureView />}
+      {viewMode === 'new' && <NewArchitectureView />}
       {viewMode === 'flow' && <DataFlowView />}
       {viewMode === 'coverage' && <CoverageView />}
       {viewMode === 'clients' && <ClientsView />}
