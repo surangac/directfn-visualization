@@ -19,7 +19,7 @@ const NewArchitectureView = () => {
       </div>
       
       {/* Architecture Diagram */}
-      <div className="relative w-full h-[550px] bg-gradient-to-b from-blue-50 to-indigo-50 rounded-lg border border-blue-200 mb-6 overflow-hidden">
+      <div className="relative w-full h-[580px] bg-gradient-to-b from-blue-50 to-indigo-50 rounded-lg border border-blue-200 mb-6 overflow-hidden">
         <div className="absolute inset-0 p-6">
           {/* Exchanges Layer */}
           <div className="absolute top-[30px] left-0 right-0 flex justify-center">
@@ -58,8 +58,8 @@ const NewArchitectureView = () => {
             </div>
           </div>
           
-          {/* Microservices Backend */}
-          <div className="absolute top-[260px] left-0 right-0 flex justify-center">
+          {/* Microservices Backend - move up slightly */}
+          <div className="absolute top-[250px] left-0 right-0 flex justify-center">
             <div className="w-[500px] px-2 py-3 bg-indigo-50 rounded-md border border-indigo-200 flex flex-col items-center shadow-sm">
               <div className="flex items-center mb-3">
                 <Boxes size={20} className="text-indigo-700 mr-2" />
@@ -68,19 +68,19 @@ const NewArchitectureView = () => {
               
               <div className="grid grid-cols-4 gap-2 w-full mb-2">
                 <div className="bg-indigo-100 p-2 rounded border border-indigo-200 text-center">
-                  <div className="text-xs font-medium text-indigo-800">Normalization</div>
+                  <div className="text-xs font-medium text-indigo-800">Normalization(DM)</div>
                   <div className="text-[10px] text-indigo-600">Service</div>
                 </div>
                 <div className="bg-indigo-100 p-2 rounded border border-indigo-200 text-center">
-                  <div className="text-xs font-medium text-indigo-800">Enrichment</div>
+                  <div className="text-xs font-medium text-indigo-800">Enrichment(Index Calculation)</div>
                   <div className="text-[10px] text-indigo-600">Service</div>
                 </div>
                 <div className="bg-indigo-100 p-2 rounded border border-indigo-200 text-center">
-                  <div className="text-xs font-medium text-indigo-800">Historical</div>
+                  <div className="text-xs font-medium text-indigo-800">Historical(Charts)</div>
                   <div className="text-[10px] text-indigo-600">Service</div>
                 </div>
                 <div className="bg-indigo-100 p-2 rounded border border-indigo-200 text-center">
-                  <div className="text-xs font-medium text-indigo-800">Analytics</div>
+                  <div className="text-xs font-medium text-indigo-800">Analytics(Technical Indicators)</div>
                   <div className="text-[10px] text-indigo-600">Service</div>
                 </div>
               </div>
@@ -106,8 +106,8 @@ const NewArchitectureView = () => {
             </div>
           </div>
           
-          {/* Databases */}
-          <div className="absolute top-[270px] right-[50px] flex flex-col items-center">
+          {/* Databases - adjust positioning */}
+          <div className="absolute top-[260px] right-[50px] flex flex-col items-center">
             <div className="mb-2">
               <Database size={30} className="text-purple-600" />
               <span className="text-xs font-medium text-purple-800 block text-center">Time Series</span>
@@ -120,25 +120,25 @@ const NewArchitectureView = () => {
             </div>
           </div>
           
-          {/* Connection Lines to DBs */}
-          <div className="absolute top-[280px] left-[75%] w-[60px] h-[1px] bg-purple-400"></div>
-          <div className="absolute top-[340px] left-[75%] w-[60px] h-[1px] bg-blue-400"></div>
+          {/* Connection Lines to DBs - adjust positioning */}
+          <div className="absolute top-[270px] left-[75%] w-[60px] h-[1px] bg-purple-400"></div>
+          <div className="absolute top-[330px] left-[75%] w-[60px] h-[1px] bg-blue-400"></div>
           
-          {/* Cache Layer */}
-          <div className="absolute top-[360px] left-0 right-0 flex justify-center">
+          {/* Cache Layer - increase vertical spacing */}
+          <div className="absolute top-[380px] left-0 right-0 flex justify-center">
             <div className="w-[500px] h-[40px] bg-red-50 rounded-md border border-red-200 flex items-center justify-center shadow-sm">
               <Cpu size={18} className="text-red-600 mr-2" />
               <span className="font-medium text-red-800">Distributed Cache Layer (Redis)</span>
             </div>
           </div>
           
-          {/* Arrows Down */}
-          <div className="absolute top-[400px] left-[30%] w-0 h-0 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-t-[12px] border-t-red-300"></div>
-          <div className="absolute top-[400px] left-[50%] w-0 h-0 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-t-[12px] border-t-red-300"></div>
-          <div className="absolute top-[400px] left-[70%] w-0 h-0 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-t-[12px] border-t-red-300"></div>
+          {/* Arrows Down - adjust positioning */}
+          <div className="absolute top-[430px] left-[30%] w-0 h-0 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-t-[12px] border-t-red-300"></div>
+          <div className="absolute top-[430px] left-[50%] w-0 h-0 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-t-[12px] border-t-red-300"></div>
+          <div className="absolute top-[430px] left-[70%] w-0 h-0 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-t-[12px] border-t-red-300"></div>
           
-          {/* Client Layer */}
-          <div className="absolute top-[420px] left-0 right-0 flex justify-center space-x-4">
+          {/* Client Layer - adjust positioning */}
+          <div className="absolute top-[450px] left-0 right-0 flex justify-center space-x-4">
             <div className="w-[130px] h-[70px] bg-blue-100 rounded-md border border-blue-300 flex flex-col items-center justify-center shadow-sm">
               <span className="font-medium text-blue-800">Web Apps</span>
               <span className="text-xs text-blue-600">React, Angular</span>
