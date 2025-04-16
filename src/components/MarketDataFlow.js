@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import OldArchitectureView from './views/OldArchitectureView';
 import NewArchitectureView from './views/NewArchitectureView';
+import NewArchitecture1View from './views/NewArchitecture1View';
 import DataFlowView from './views/DataFlowView';
 import CoverageView from './views/CoverageView';
 import ClientsView from './views/ClientsView';
@@ -10,7 +11,7 @@ import TeamView from './views/TeamView';
  * Main component that integrates all views for the DirectFN Market Data Backend visualization
  */
 const MarketDataFlow = () => {
-  const [viewMode, setViewMode] = useState('old'); // 'old', 'new', 'flow', 'coverage', 'clients', 'team'
+  const [viewMode, setViewMode] = useState('old'); // 'old', 'new', 'new1', 'flow', 'coverage', 'clients', 'team'
 
   return (
     <div className="flex flex-col items-center p-6 bg-gray-50 rounded-lg shadow-lg text-gray-800 max-w-4xl mx-auto">
@@ -30,6 +31,12 @@ const MarketDataFlow = () => {
           className={`px-4 py-2 rounded-md font-medium ${viewMode === 'new' ? 'bg-blue-600 text-white' : 'bg-white border border-gray-300'}`}
         >
           Modern Architecture
+        </button>
+        <button 
+          onClick={() => setViewMode('new1')} 
+          className={`px-4 py-2 rounded-md font-medium ${viewMode === 'new1' ? 'bg-indigo-600 text-white' : 'bg-white border border-gray-300'}`}
+        >
+          Executive Overview
         </button>
         <button 
           onClick={() => setViewMode('flow')} 
@@ -60,6 +67,7 @@ const MarketDataFlow = () => {
       {/* Render the appropriate view based on selected tab */}
       {viewMode === 'old' && <OldArchitectureView />}
       {viewMode === 'new' && <NewArchitectureView />}
+      {viewMode === 'new1' && <NewArchitecture1View />}
       {viewMode === 'flow' && <DataFlowView />}
       {viewMode === 'coverage' && <CoverageView />}
       {viewMode === 'clients' && <ClientsView />}
