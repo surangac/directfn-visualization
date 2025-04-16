@@ -1,5 +1,5 @@
 import React from 'react';
-import { Layers, Database, Globe, Cpu, Cloud, Lock, Zap, Boxes } from 'lucide-react';
+import { Layers, Database, Globe, Cpu, Cloud, Lock, Zap, Boxes, Shield } from 'lucide-react';
 
 /**
  * New Architecture View - Shows the modern microservices architecture of DirectFN Market Data Backend
@@ -57,6 +57,20 @@ const NewArchitectureView = () => {
               <span className="font-medium text-purple-800">Message Queue (Kafka)</span>
             </div>
           </div>
+          
+          {/* Authentication Service */}
+          <div className="absolute top-[260px] left-[80px] flex flex-col items-center">
+            <div className="w-[120px] h-[120px] bg-orange-50 rounded-md border border-orange-200 flex flex-col items-center justify-center shadow-sm">
+              <Shield size={24} className="text-orange-600 mb-2" />
+              <div className="text-sm font-medium text-orange-800 text-center">JWT Authentication</div>
+              <div className="text-[10px] text-orange-600 text-center mt-1">Secure Authentication Layer</div>
+            </div>
+          </div>
+          
+          {/* Connection lines from Auth to Core and API */}
+          <div className="absolute top-[280px] left-[200px] w-[60px] h-[1px] bg-orange-400"></div>
+          <div className="absolute top-[350px] left-[140px] h-[100px] w-[1px] bg-orange-400"></div>
+          <div className="absolute top-[450px] left-[140px] w-[120px] h-[1px] bg-orange-400"></div>
           
           {/* Microservices Backend - Core Processing */}
           <div className="absolute top-[260px] left-0 right-0 flex justify-center">
