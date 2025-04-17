@@ -78,8 +78,8 @@ const TeamView = () => {
   // Statistics
   const stats = [
     { label: 'Technical Staff', value: engineeringTeam.length + qaTeam.length },
-    { label: 'Exchanges Handled', value: 9 },
-    { label: 'Countries Served', value: 10 },
+    { label: 'Exchanges Handled', value: 25 },
+    { label: 'Countries Served', value: 20 },
     { label: 'Projects Delivered', value: 32 }
   ];
   

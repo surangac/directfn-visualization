@@ -1,5 +1,5 @@
 import React from 'react';
-import { AlertTriangle, ShieldAlert, DollarSign, Users, BarChart2, Globe, Clock, Award } from 'lucide-react';
+import { AlertTriangle, ShieldAlert, DollarSign, Users, BarChart2, Globe, Clock, Award, Headphones } from 'lucide-react';
 
 /**
  * BusinessContinuityView - Shows business risks without the MBE team and necessary investments
@@ -87,7 +87,7 @@ const BusinessContinuityView = () => {
           <h3 className="text-xl font-bold text-blue-800">Invest in the Market Backend Team</h3>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
           <div className="bg-gradient-to-br from-blue-50 to-indigo-50 p-5 rounded-lg border border-blue-100">
             <div className="flex justify-center mb-4">
               <Users size={28} className="text-blue-600" />
@@ -134,6 +134,31 @@ const BusinessContinuityView = () => {
               <li className="flex items-start">
                 <span className="inline-block w-2 h-2 bg-purple-500 rounded-full mt-1.5 mr-2"></span>
                 <span className="text-gray-700">Performance optimization tech</span>
+              </li>
+            </ul>
+          </div>
+          
+          <div className="bg-gradient-to-br from-amber-50 to-orange-50 p-5 rounded-lg border border-amber-100">
+            <div className="flex justify-center mb-4">
+              <Headphones size={28} className="text-amber-600" />
+            </div>
+            <h4 className="text-lg font-bold text-amber-800 text-center mb-3">Production Support</h4>
+            <ul className="space-y-2">
+              <li className="flex items-start">
+                <span className="inline-block w-2 h-2 bg-amber-500 rounded-full mt-1.5 mr-2"></span>
+                <span className="text-gray-700">Fair compensation for weekend/holiday support</span>
+              </li>
+              <li className="flex items-start">
+                <span className="inline-block w-2 h-2 bg-amber-500 rounded-full mt-1.5 mr-2"></span>
+                <span className="text-gray-700">Tiered reward system for on-call availability</span>
+              </li>
+              <li className="flex items-start">
+                <span className="inline-block w-2 h-2 bg-amber-500 rounded-full mt-1.5 mr-2"></span>
+                <span className="text-gray-700">Premium hourly rates for active incident response</span>
+              </li>
+              <li className="flex items-start">
+                <span className="inline-block w-2 h-2 bg-amber-500 rounded-full mt-1.5 mr-2"></span>
+                <span className="text-gray-700">Structured rotation to prevent burnout</span>
               </li>
             </ul>
           </div>
