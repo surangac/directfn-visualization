@@ -64,7 +64,7 @@ const NewArchitecture1View = () => {
           </div>
           
           {/* Auth Components */}
-          <div className="absolute top-[70px] right-[10%]">
+          <div className="absolute top-[340px] right-[1%]">
             <div className="w-[90px] h-[100px] flex flex-col items-center">
               <div className="w-[80px] h-[60px] bg-red-400 rounded-md flex items-center justify-center shadow-md border border-red-500">
                 <span className="font-medium text-white text-xs">NTP Auth</span>
@@ -87,13 +87,49 @@ const NewArchitecture1View = () => {
             </div>
           </div>
           
-          {/* PostgreSQL DB */}
-          <div className="absolute top-[210px] left-[16%]">
+          {/* System Manager */}
+          <div className="absolute top-[340px] left-1/2 transform -translate-x-1/2 flex flex-col items-center">
+            <div className="w-[110px] h-[50px] bg-amber-600 rounded-md flex items-center justify-center shadow-md border border-amber-700">
+              <span className="font-medium text-white text-sm">System Manager</span>
+            </div>
+          </div>
+          
+          {/* Managers Layer - Moved down by 20px */}
+          <div className="absolute top-[390px] left-1/2 transform -translate-x-1/2 flex flex-col items-center">
+            <div className="font-medium text-gray-800 mb-2 text-sm">Data Management</div>
+            <div className="flex space-x-3">
+              <div className="w-[80px] h-[45px] bg-purple-400 rounded-md flex items-center justify-center shadow-md border border-purple-500">
+                <span className="font-medium text-white text-xs">Notification Manager</span>
+              </div>
+              <div className="w-[80px] h-[45px] bg-purple-400 rounded-md flex items-center justify-center shadow-md border border-purple-500">
+                <span className="font-medium text-white text-xs">Chart Alerts</span>
+              </div>
+              <div className="w-[80px] h-[45px] bg-purple-400 rounded-md flex items-center justify-center shadow-md border border-purple-500">
+                <span className="font-medium text-white text-xs">Indicator Alerts</span>
+              </div>
+              <div className="w-[80px] h-[45px] bg-purple-400 rounded-md flex items-center justify-center shadow-md border border-purple-500">
+                <span className="font-medium text-white text-xs">Utility Manager</span>
+              </div>
+            </div>
+          </div>
+          
+          {/* PostgreSQL DB - Moved to same Y-axis as Managers Layer */}
+          <div className="absolute top-[390px] left-[16%]">
             <div className="w-[70px] h-[85px] flex flex-col items-center">
               <div className="w-[70px] h-[70px] rounded-md border-4 border-purple-400 flex items-center justify-center bg-white">
                 <Database size={40} className="text-purple-500" />
               </div>
               <span className="text-xs font-medium text-purple-700 mt-1">PostgreSQL DB</span>
+            </div>
+          </div>
+          
+          {/* Price DB - Moved to same Y-axis as Managers Layer */}
+          <div className="absolute top-[390px] right-[16%]">
+            <div className="w-[60px] h-[75px] flex flex-col items-center">
+              <div className="w-[60px] h-[60px] rounded-md border-4 border-red-400 flex items-center justify-center bg-white">
+                <Database size={30} className="text-red-500" />
+              </div>
+              <span className="text-xs font-medium text-red-700 mt-1">Price DB</span>
             </div>
           </div>
           
@@ -129,15 +165,8 @@ const NewArchitecture1View = () => {
             </div>
           </div>
           
-          {/* System Manager */}
-          <div className="absolute top-[340px] left-[55%] flex flex-col items-center">
-            <div className="w-[110px] h-[50px] bg-amber-600 rounded-md flex items-center justify-center shadow-md border border-amber-700">
-              <span className="font-medium text-white text-sm">System Manager</span>
-            </div>
-          </div>
-          
-          {/* Service Cluster - Moved to left side */}
-          <div className="absolute top-[330px] left-[5%] flex flex-col items-start">
+          {/* Service Cluster - Moved down below Managers Layer */}
+          <div className="absolute top-[490px] left-[5%] flex flex-col items-start">
             <div className="font-medium text-gray-800 mb-2 text-sm">Service Cluster</div>
             <div className="grid grid-cols-2 gap-2">
               <div className="w-[90px] h-[45px] bg-blue-600 rounded-md flex items-center justify-center shadow-md border border-blue-700">
@@ -167,37 +196,8 @@ const NewArchitecture1View = () => {
             </div>
           </div>
           
-          {/* Price DB */}
-          <div className="absolute top-[400px] left-[57%]">
-            <div className="w-[60px] h-[75px] flex flex-col items-center">
-              <div className="w-[60px] h-[60px] rounded-md border-4 border-red-400 flex items-center justify-center bg-white">
-                <Database size={30} className="text-red-500" />
-              </div>
-              <span className="text-xs font-medium text-red-700 mt-1">Price DB</span>
-            </div>
-          </div>
-          
-          {/* Managers Layer - Moved to the right of Service Cluster */}
-          <div className="absolute top-[370px] left-[40%] flex flex-col items-start">
-            <div className="font-medium text-gray-800 mb-2 text-sm">Data Management</div>
-            <div className="flex space-x-3">
-              <div className="w-[80px] h-[45px] bg-purple-400 rounded-md flex items-center justify-center shadow-md border border-purple-500">
-                <span className="font-medium text-white text-xs">Notification Manager</span>
-              </div>
-              <div className="w-[80px] h-[45px] bg-purple-400 rounded-md flex items-center justify-center shadow-md border border-purple-500">
-                <span className="font-medium text-white text-xs">Chart Alerts</span>
-              </div>
-              <div className="w-[80px] h-[45px] bg-purple-400 rounded-md flex items-center justify-center shadow-md border border-purple-500">
-                <span className="font-medium text-white text-xs">Indicator Alerts</span>
-              </div>
-              <div className="w-[80px] h-[45px] bg-purple-400 rounded-md flex items-center justify-center shadow-md border border-purple-500">
-                <span className="font-medium text-white text-xs">Utility Manager</span>
-              </div>
-            </div>
-          </div>
-          
           {/* API Services - Positioned on the right */}
-          <div className="absolute top-[470px] right-[5%] flex flex-col items-start">
+          <div className="absolute top-[490px] right-[5%] flex flex-col items-start">
             <div className="font-medium text-gray-800 mb-2 text-sm">API Services</div>
             <div className="grid grid-cols-2 gap-2">
               <div className="w-[90px] h-[40px] bg-blue-800 rounded-md flex items-center justify-center shadow-md border border-blue-900">
@@ -227,13 +227,13 @@ const NewArchitecture1View = () => {
             </div>
           </div>
           
-          {/* Kafka Message Queue */}
-          <div className="absolute top-[470px] left-[22%] w-[250px] h-[60px] bg-yellow-100 rounded-md border border-yellow-300 flex items-center justify-center shadow-md">
+          {/* Kafka Message Queue - Adjusted for new positioning */}
+          <div className="absolute top-[490px] left-1/2 transform -translate-x-1/2 w-[250px] h-[60px] bg-yellow-100 rounded-md border border-yellow-300 flex items-center justify-center shadow-md">
             <div className="text-sm font-medium text-yellow-800">Kafka (MQ)</div>
           </div>
           
-          {/* Client Applications */}
-          <div className="absolute bottom-[50px] left-0 right-0 flex justify-center">
+          {/* Client Applications - Moved further down */}
+          <div className="absolute bottom-[10px] left-0 right-0 flex justify-center">
             <div className="w-[350px] h-[70px] bg-gray-200 rounded-lg border border-gray-400 flex items-center justify-center">
               <div className="flex space-x-10">
                 <div className="flex flex-col items-center">
@@ -252,7 +252,7 @@ const NewArchitecture1View = () => {
             </div>
           </div>
           
-          {/* Connection Lines - Simplified and Updated for New Positions */}
+          {/* Connection Lines - Updated for new component positions */}
           <svg className="absolute inset-0 w-full h-full" style={{ zIndex: 5 }}>
             {/* Main flow paths */}
             <path d="M 400 110 L 400 190" stroke="#333" strokeWidth="1.5" fill="none" />
@@ -261,22 +261,28 @@ const NewArchitecture1View = () => {
             <path d="M 400 240 L 400 290" stroke="#333" strokeWidth="1.5" fill="none" />
             <path d="M 400 240 L 240 270" stroke="#333" strokeWidth="1.5" fill="none" />
             <path d="M 400 240 L 560 270" stroke="#333" strokeWidth="1.5" fill="none" />
+            <path d="M 400 290 L 400 340" stroke="#333" strokeWidth="1.5" fill="none" />
+            <path d="M 400 390 L 400 430" stroke="#333" strokeWidth="1.5" fill="none" />
+            <path d="M 400 430 L 400 470" stroke="#333" strokeWidth="1.5" fill="none" />
+            
+            {/* DB and Auth connections */}
+            <path d="M 240 430 L 350 430" stroke="#333" strokeWidth="1.5" fill="none" />
+            <path d="M 450 430 L 560 430" stroke="#333" strokeWidth="1.5" fill="none" />
             
             {/* Left side connections */}
-            <path d="M 180 380 L 180 470" stroke="#333" strokeWidth="1.5" fill="none" />
-            <path d="M 180 470 L 220 470" stroke="#333" strokeWidth="1.5" fill="none" />
+            <path d="M 400 450 L 180 490" stroke="#333" strokeWidth="1.5" fill="none" />
             
             {/* Right side connections */}
-            <path d="M 460 450 L 600 470" stroke="#333" strokeWidth="1.5" fill="none" />
+            <path d="M 400 450 L 600 490" stroke="#333" strokeWidth="1.5" fill="none" />
             
             {/* Bottom connections */}
-            <path d="M 350 530 L 400 600" stroke="#333" strokeWidth="1.5" fill="none" />
-            <path d="M 520 510 L 520 600" stroke="#333" strokeWidth="1.5" fill="none" />
-            <path d="M 600 540 L 600 600" stroke="#333" strokeWidth="1.5" fill="none" />
+            <path d="M 400 550 L 400 640" stroke="#333" strokeWidth="1.5" fill="none" />
+            <path d="M 180 560 L 300 640" stroke="#333" strokeWidth="1.5" fill="none" />
+            <path d="M 600 560 L 500 640" stroke="#333" strokeWidth="1.5" fill="none" />
             
             {/* Cross connections */}
-            <path d="M 180 400 L 250 400" stroke="#333" strokeWidth="1.5" fill="none" />
-            <path d="M 420 400 L 500 400" stroke="#333" strokeWidth="1.5" fill="none" />
+            <path d="M 180 520 L 350 520" stroke="#333" strokeWidth="1.5" fill="none" />
+            <path d="M 450 520 L 600 520" stroke="#333" strokeWidth="1.5" fill="none" />
           </svg>
         </div>
       </div>
