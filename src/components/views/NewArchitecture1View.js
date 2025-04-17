@@ -234,20 +234,24 @@ const NewArchitecture1View = () => {
           </div>
           
           {/* Client Applications - Moved further down */}
-          <div className="absolute bottom-[10px] left-0 right-0 flex justify-center">
+          <div className="absolute bottom-[0px] left-0 right-0 flex justify-center">
             <div className="w-[350px] h-[70px] bg-gray-200 rounded-lg border border-gray-400 flex items-center justify-center">
               <div className="flex space-x-10">
                 <div className="flex flex-col items-center">
                   <Server size={24} className="text-gray-700" />
-                  <span className="text-xs font-medium text-gray-700 mt-1">Pro 11</span>
+                  <span className="text-xs font-medium text-gray-700 mt-1">Pro 9-12</span>
                 </div>
                 <div className="flex flex-col items-center">
                   <Server size={24} className="text-gray-700" />
-                  <span className="text-xs font-medium text-gray-700 mt-1">Pro 10</span>
+                  <span className="text-xs font-medium text-gray-700 mt-1">DT/AT/AMS/...</span>
                 </div>
                 <div className="flex flex-col items-center">
                   <Server size={24} className="text-gray-700" />
-                  <span className="text-xs font-medium text-gray-700 mt-1">Pro 9</span>
+                  <span className="text-xs font-medium text-gray-700 mt-1">Mobile</span>
+                </div>
+                <div className="flex flex-col items-center">
+                  <Server size={24} className="text-gray-700" />
+                  <span className="text-xs font-medium text-gray-700 mt-1">Feed Clients</span>
                 </div>
               </div>
             </div>
@@ -277,9 +281,9 @@ const NewArchitecture1View = () => {
             <path d="M 400 450 L 600 490" stroke="#333" strokeWidth="1.5" fill="none" />
             
             {/* Bottom connections */}
-            <path d="M 400 550 L 400 640" stroke="#333" strokeWidth="1.5" fill="none" />
-            <path d="M 180 560 L 300 640" stroke="#333" strokeWidth="1.5" fill="none" />
-            <path d="M 600 560 L 500 640" stroke="#333" strokeWidth="1.5" fill="none" />
+            <path d="M 400 550 L 400 650" stroke="#333" strokeWidth="1.5" fill="none" />
+            <path d="M 180 560 L 300 650" stroke="#333" strokeWidth="1.5" fill="none" />
+            <path d="M 600 560 L 500 650" stroke="#333" strokeWidth="1.5" fill="none" />
             
             {/* Cross connections */}
             <path d="M 180 520 L 350 520" stroke="#333" strokeWidth="1.5" fill="none" />
