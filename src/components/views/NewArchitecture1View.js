@@ -87,14 +87,14 @@ const NewArchitecture1View = () => {
             </div>
           </div>
           
-          {/* System Manager */}
+          {/* System Manager - Aligned with Input Layer (X-axis) */}
           <div className="absolute top-[340px] left-1/2 transform -translate-x-1/2 flex flex-col items-center">
             <div className="w-[110px] h-[50px] bg-amber-600 rounded-md flex items-center justify-center shadow-md border border-amber-700">
               <span className="font-medium text-white text-sm">System Manager</span>
             </div>
           </div>
           
-          {/* Managers Layer - Moved down by 20px */}
+          {/* Managers Layer - Aligned with Input Layer (X-axis) */}
           <div className="absolute top-[390px] left-1/2 transform -translate-x-1/2 flex flex-col items-center">
             <div className="font-medium text-gray-800 mb-2 text-sm">Data Management</div>
             <div className="flex space-x-3">
@@ -165,7 +165,7 @@ const NewArchitecture1View = () => {
             </div>
           </div>
           
-          {/* Service Cluster - Moved down below Managers Layer */}
+          {/* Service Cluster - Moved below Managers Layer and aligned with API Services */}
           <div className="absolute top-[490px] left-[5%] flex flex-col items-start">
             <div className="font-medium text-gray-800 mb-2 text-sm">Service Cluster</div>
             <div className="grid grid-cols-2 gap-2">
@@ -227,7 +227,7 @@ const NewArchitecture1View = () => {
             </div>
           </div>
           
-          {/* Kafka Message Queue - Adjusted for new positioning */}
+          {/* Kafka Message Queue - Aligned with Input Layer (X-axis) */}
           <div className="absolute top-[490px] left-1/2 transform -translate-x-1/2 w-[250px] h-[60px] bg-purple-100 rounded-md border border-purple-300 flex items-center justify-center shadow-sm">
             <Zap size={18} className="text-purple-600 mr-2" />
             <span className="font-medium text-purple-800">Message Queue (Kafka)</span>
@@ -266,7 +266,7 @@ const NewArchitecture1View = () => {
               <animate attributeName="opacity" from="1" to="0.3" dur="1.5s" repeatCount="indefinite" />
             </circle>
             <circle cx="400" cy="140" r="3" fill="#16a34a">
-              <animate attributeName="cy" from="110" to="155" dur="1.5s" begin="0.5s" repeatCount="indefinite" />
+              <animate attributeName="cy" from="110" to="155" begin="0.5s" repeatCount="indefinite" />
               <animate attributeName="opacity" from="1" to="0.3" dur="1.5s" begin="0.5s" repeatCount="indefinite" />
             </circle>
             
@@ -322,7 +322,7 @@ const NewArchitecture1View = () => {
               <animate attributeName="opacity" from="1" to="0.3" dur="1s" repeatCount="indefinite" />
             </circle>
             <circle cx="400" cy="405" r="3" fill="#7e22ce">
-              <animate attributeName="cy" from="390" to="410" dur="1s" begin="0.5s" repeatCount="indefinite" />
+              <animate attributeName="cy" from="390" to="410" begin="0.5s" repeatCount="indefinite" />
               <animate attributeName="opacity" from="1" to="0.3" dur="1s" begin="0.5s" repeatCount="indefinite" />
             </circle>
             
@@ -355,7 +355,7 @@ const NewArchitecture1View = () => {
               <animate attributeName="opacity" from="1" to="0.3" dur="2s" repeatCount="indefinite" />
             </circle>
             <circle cx="270" cy="520" r="3" fill="#7c3aed">
-              <animate attributeName="cx" from="180" to="400" dur="2s" begin="0.5s" repeatCount="indefinite" />
+              <animate attributeName="cx" from="180" to="400" begin="0.5s" repeatCount="indefinite" />
               <animate attributeName="opacity" from="1" to="0.3" dur="2s" begin="0.5s" repeatCount="indefinite" />
             </circle>
             <circle cx="550" cy="520" r="3" fill="#7c3aed">
@@ -363,7 +363,7 @@ const NewArchitecture1View = () => {
               <animate attributeName="opacity" from="1" to="0.3" dur="2s" repeatCount="indefinite" />
             </circle>
             <circle cx="500" cy="520" r="3" fill="#7c3aed">
-              <animate attributeName="cx" from="600" to="400" dur="2s" begin="0.5s" repeatCount="indefinite" />
+              <animate attributeName="cx" from="600" to="400" begin="0.5s" repeatCount="indefinite" />
               <animate attributeName="opacity" from="1" to="0.3" dur="2s" begin="0.5s" repeatCount="indefinite" />
             </circle>
             
@@ -386,7 +386,7 @@ const NewArchitecture1View = () => {
               <animate attributeName="opacity" from="1" to="0.3" dur="2.5s" repeatCount="indefinite" />
             </circle>
             <circle cx="400" cy="610" r="3" fill="#2563eb">
-              <animate attributeName="cy" from="550" to="660" dur="2.5s" begin="1s" repeatCount="indefinite" />
+              <animate attributeName="cy" from="550" to="660" begin="1s" repeatCount="indefinite" />
               <animate attributeName="opacity" from="1" to="0.3" dur="2.5s" begin="1s" repeatCount="indefinite" />
             </circle>
             
@@ -401,7 +401,7 @@ const NewArchitecture1View = () => {
               <animate attributeName="opacity" from="1" to="0.3" dur="3s" repeatCount="indefinite" />
             </circle>
             <circle cx="550" cy="580" r="3" fill="#b91c1c">
-              <animate attributeName="cx" from="710" to="400" dur="3s" begin="1.5s" repeatCount="indefinite" />
+              <animate attributeName="cx" from="710" to="400" begin="1.5s" repeatCount="indefinite" />
               <animate attributeName="cy" from="345" to="760" dur="3s" begin="1.5s" repeatCount="indefinite" />
               <animate attributeName="opacity" from="1" to="0.3" dur="3s" begin="1.5s" repeatCount="indefinite" />
             </circle>
