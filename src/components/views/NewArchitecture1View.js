@@ -228,8 +228,9 @@ const NewArchitecture1View = () => {
           </div>
           
           {/* Kafka Message Queue - Adjusted for new positioning */}
-          <div className="absolute top-[490px] left-1/2 transform -translate-x-1/2 w-[250px] h-[60px] bg-yellow-100 rounded-md border border-yellow-300 flex items-center justify-center shadow-md">
-            <div className="text-sm font-medium text-yellow-800">Kafka (MQ)</div>
+          <div className="absolute top-[490px] left-1/2 transform -translate-x-1/2 w-[250px] h-[60px] bg-purple-100 rounded-md border border-purple-300 flex items-center justify-center shadow-sm">
+            <Zap size={18} className="text-purple-600 mr-2" />
+            <span className="font-medium text-purple-800">Message Queue (Kafka)</span>
           </div>
           
           {/* Client Applications - Moved further down */}
