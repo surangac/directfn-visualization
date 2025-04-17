@@ -259,35 +259,38 @@ const NewArchitecture1View = () => {
           
           {/* Connection Lines - Updated for new component positions */}
           <svg className="absolute inset-0 w-full h-full" style={{ zIndex: 5 }}>
-            {/* Main flow paths */}
-            <path d="M 400 110 L 400 190" stroke="#333" strokeWidth="1.5" fill="none" />
-            <path d="M 340 215 L 280 215" stroke="#333" strokeWidth="1.5" fill="none" />
-            <path d="M 460 215 L 520 215" stroke="#333" strokeWidth="1.5" fill="none" />
-            <path d="M 400 240 L 400 290" stroke="#333" strokeWidth="1.5" fill="none" />
-            <path d="M 400 240 L 240 270" stroke="#333" strokeWidth="1.5" fill="none" />
-            <path d="M 400 240 L 560 270" stroke="#333" strokeWidth="1.5" fill="none" />
-            <path d="M 400 290 L 400 340" stroke="#333" strokeWidth="1.5" fill="none" />
-            <path d="M 400 390 L 400 430" stroke="#333" strokeWidth="1.5" fill="none" />
-            <path d="M 400 430 L 400 470" stroke="#333" strokeWidth="1.5" fill="none" />
+            {/* 1. Connect Exchange Feed with Analyzer */}
+            <path d="M 400 110 L 400 155" stroke="#333" strokeWidth="1.5" fill="none" />
             
-            {/* DB and Auth connections */}
-            <path d="M 240 430 L 350 430" stroke="#333" strokeWidth="1.5" fill="none" />
-            <path d="M 450 430 L 560 430" stroke="#333" strokeWidth="1.5" fill="none" />
+            {/* 2. Connect Analyzer with DM and GS */}
+            <path d="M 400 190 L 400 215" stroke="#333" strokeWidth="1.5" fill="none" />
+            <path d="M 400 215 L 340 215" stroke="#333" strokeWidth="1.5" fill="none" />
+            <path d="M 400 215 L 460 215" stroke="#333" strokeWidth="1.5" fill="none" />
             
-            {/* Left side connections */}
-            <path d="M 400 450 L 180 490" stroke="#333" strokeWidth="1.5" fill="none" />
+            {/* 3. Connect DM,GS with Market Data Processing and Client Tools */}
+            <path d="M 340 225 L 240 250" stroke="#333" strokeWidth="1.5" fill="none" />
+            <path d="M 460 225 L 560 250" stroke="#333" strokeWidth="1.5" fill="none" />
             
-            {/* Right side connections */}
-            <path d="M 400 450 L 600 490" stroke="#333" strokeWidth="1.5" fill="none" />
+            {/* 4. Connect Client Tools and Market Data Processing with System Manager */}
+            <path d="M 240 300 L 400 340" stroke="#333" strokeWidth="1.5" fill="none" />
+            <path d="M 560 300 L 400 340" stroke="#333" strokeWidth="1.5" fill="none" />
             
-            {/* Bottom connections */}
+            {/* 5. Connect System Manager with Data Management */}
+            <path d="M 400 390 L 400 410" stroke="#333" strokeWidth="1.5" fill="none" />
+            
+            {/* 6. Connect Data Management with Kafka, Service Cluster, API Services */}
+            <path d="M 400 435 L 400 490" stroke="#333" strokeWidth="1.5" fill="none" />
+            <path d="M 400 435 L 180 490" stroke="#333" strokeWidth="1.5" fill="none" />
+            <path d="M 400 435 L 600 490" stroke="#333" strokeWidth="1.5" fill="none" />
+            
+            {/* 7. Connect Service Cluster and API Services with Kafka */}
+            <path d="M 180 520 L 400 520" stroke="#333" strokeWidth="1.5" fill="none" />
+            <path d="M 600 520 L 400 520" stroke="#333" strokeWidth="1.5" fill="none" />
+            
+            {/* 8. Connect Service Cluster, API Services and Kafka with Client Applications */}
+            <path d="M 180 550 L 300 660" stroke="#333" strokeWidth="1.5" fill="none" />
+            <path d="M 600 550 L 500 660" stroke="#333" strokeWidth="1.5" fill="none" />
             <path d="M 400 550 L 400 660" stroke="#333" strokeWidth="1.5" fill="none" />
-            <path d="M 180 560 L 300 660" stroke="#333" strokeWidth="1.5" fill="none" />
-            <path d="M 600 560 L 500 660" stroke="#333" strokeWidth="1.5" fill="none" />
-            
-            {/* Cross connections */}
-            <path d="M 180 520 L 350 520" stroke="#333" strokeWidth="1.5" fill="none" />
-            <path d="M 450 520 L 600 520" stroke="#333" strokeWidth="1.5" fill="none" />
           </svg>
         </div>
       </div>
