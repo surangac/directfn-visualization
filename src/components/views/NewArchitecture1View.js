@@ -284,8 +284,26 @@ const NewArchitecture1View = () => {
             <path d="M 400 435 L 600 490" stroke="#333" strokeWidth="1.5" fill="none" />
             
             {/* 7. Connect Service Cluster and API Services with Kafka */}
-            <path d="M 180 520 L 400 520" stroke="#333" strokeWidth="1.5" fill="none" />
-            <path d="M 600 520 L 400 520" stroke="#333" strokeWidth="1.5" fill="none" />
+            <path d="M 180 520 L 400 520" stroke="#4f46e5" strokeWidth="2" strokeDasharray="4" fill="none" />
+            <path d="M 600 520 L 400 520" stroke="#4f46e5" strokeWidth="2" strokeDasharray="4" fill="none" />
+            
+            {/* Animated data particles for Kafka */}
+            <circle cx="220" cy="520" r="3" fill="#7c3aed">
+              <animate attributeName="cx" from="180" to="400" dur="2s" repeatCount="indefinite" />
+              <animate attributeName="opacity" from="1" to="0.3" dur="2s" repeatCount="indefinite" />
+            </circle>
+            <circle cx="270" cy="520" r="3" fill="#7c3aed">
+              <animate attributeName="cx" from="180" to="400" dur="2s" begin="0.5s" repeatCount="indefinite" />
+              <animate attributeName="opacity" from="1" to="0.3" dur="2s" begin="0.5s" repeatCount="indefinite" />
+            </circle>
+            <circle cx="550" cy="520" r="3" fill="#7c3aed">
+              <animate attributeName="cx" from="600" to="400" dur="2s" repeatCount="indefinite" />
+              <animate attributeName="opacity" from="1" to="0.3" dur="2s" repeatCount="indefinite" />
+            </circle>
+            <circle cx="500" cy="520" r="3" fill="#7c3aed">
+              <animate attributeName="cx" from="600" to="400" dur="2s" begin="0.5s" repeatCount="indefinite" />
+              <animate attributeName="opacity" from="1" to="0.3" dur="2s" begin="0.5s" repeatCount="indefinite" />
+            </circle>
             
             {/* 8. Connect Service Cluster, API Services and Kafka with Client Applications */}
             <path d="M 180 550 L 300 660" stroke="#333" strokeWidth="1.5" fill="none" />
@@ -353,6 +371,29 @@ const NewArchitecture1View = () => {
         </div>
       </div>
       
+      {/* Technology Stack */}
+      <div className="mb-6">
+        <h3 className="text-lg font-bold text-blue-800 mb-3">Modern Technology Stack</h3>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+          <div className="p-3 bg-gray-50 rounded-lg border border-gray-200 text-center">
+            <h4 className="font-medium text-gray-800 mb-1">Backend</h4>
+            <p className="text-xs text-gray-600">C++, Java, Node.js, Go</p>
+          </div>
+          <div className="p-3 bg-gray-50 rounded-lg border border-gray-200 text-center">
+            <h4 className="font-medium text-gray-800 mb-1">Frontend</h4>
+            <p className="text-xs text-gray-600">React, TypeScript, Tailwind</p>
+          </div>
+          <div className="p-3 bg-gray-50 rounded-lg border border-gray-200 text-center">
+            <h4 className="font-medium text-gray-800 mb-1">Data</h4>
+            <p className="text-xs text-gray-600">Kafka, Redis, Infinispan, Oracle, PostgreSQL</p>
+          </div>
+          <div className="p-3 bg-gray-50 rounded-lg border border-gray-200 text-center">
+            <h4 className="font-medium text-gray-800 mb-1">Infrastructure</h4>
+            <p className="text-xs text-gray-600">Kubernetes, Docker, Terraform</p>
+          </div>
+        </div>
+      </div>
+
       {/* Key Metrics */}
       <div className="mb-6">
         <h3 className="text-lg font-bold text-blue-800 mb-3">Key Performance Indicators</h3>
