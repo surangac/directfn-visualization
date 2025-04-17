@@ -136,8 +136,8 @@ const NewArchitecture1View = () => {
             </div>
           </div>
           
-          {/* Service Cluster */}
-          <div className="absolute top-[330px] right-[18%] flex flex-col items-start">
+          {/* Service Cluster - Moved to left side */}
+          <div className="absolute top-[330px] left-[5%] flex flex-col items-start">
             <div className="font-medium text-gray-800 mb-2 text-sm">Service Cluster</div>
             <div className="grid grid-cols-2 gap-2">
               <div className="w-[90px] h-[45px] bg-blue-600 rounded-md flex items-center justify-center shadow-md border border-blue-700">
@@ -177,8 +177,8 @@ const NewArchitecture1View = () => {
             </div>
           </div>
           
-          {/* Managers Layer */}
-          <div className="absolute top-[370px] left-[18%] flex flex-col items-start">
+          {/* Managers Layer - Moved to the right of Service Cluster */}
+          <div className="absolute top-[370px] left-[40%] flex flex-col items-start">
             <div className="font-medium text-gray-800 mb-2 text-sm">Data Management</div>
             <div className="flex space-x-3">
               <div className="w-[80px] h-[45px] bg-purple-400 rounded-md flex items-center justify-center shadow-md border border-purple-500">
@@ -196,8 +196,8 @@ const NewArchitecture1View = () => {
             </div>
           </div>
           
-          {/* API Services */}
-          <div className="absolute top-[470px] right-[12%] flex flex-col items-start">
+          {/* API Services - Positioned on the right */}
+          <div className="absolute top-[470px] right-[5%] flex flex-col items-start">
             <div className="font-medium text-gray-800 mb-2 text-sm">API Services</div>
             <div className="grid grid-cols-2 gap-2">
               <div className="w-[90px] h-[40px] bg-blue-800 rounded-md flex items-center justify-center shadow-md border border-blue-900">
@@ -252,7 +252,7 @@ const NewArchitecture1View = () => {
             </div>
           </div>
           
-          {/* Connection Lines - Simplified */}
+          {/* Connection Lines - Simplified and Updated for New Positions */}
           <svg className="absolute inset-0 w-full h-full" style={{ zIndex: 5 }}>
             {/* Main flow paths */}
             <path d="M 400 110 L 400 190" stroke="#333" strokeWidth="1.5" fill="none" />
@@ -261,16 +261,22 @@ const NewArchitecture1View = () => {
             <path d="M 400 240 L 400 290" stroke="#333" strokeWidth="1.5" fill="none" />
             <path d="M 400 240 L 240 270" stroke="#333" strokeWidth="1.5" fill="none" />
             <path d="M 400 240 L 560 270" stroke="#333" strokeWidth="1.5" fill="none" />
-            <path d="M 320 420 L 320 470" stroke="#333" strokeWidth="1.5" fill="none" />
+            
+            {/* Left side connections */}
+            <path d="M 180 380 L 180 470" stroke="#333" strokeWidth="1.5" fill="none" />
+            <path d="M 180 470 L 220 470" stroke="#333" strokeWidth="1.5" fill="none" />
+            
+            {/* Right side connections */}
+            <path d="M 460 450 L 600 470" stroke="#333" strokeWidth="1.5" fill="none" />
+            
+            {/* Bottom connections */}
             <path d="M 350 530 L 400 600" stroke="#333" strokeWidth="1.5" fill="none" />
-            <path d="M 520 540 L 520 600" stroke="#333" strokeWidth="1.5" fill="none" />
+            <path d="M 520 510 L 520 600" stroke="#333" strokeWidth="1.5" fill="none" />
             <path d="M 600 540 L 600 600" stroke="#333" strokeWidth="1.5" fill="none" />
             
-            {/* Side connections */}
-            <path d="M 340 215 L 340 290" stroke="#333" strokeWidth="1.5" fill="none" />
-            <path d="M 240 320 L 240 370" stroke="#333" strokeWidth="1.5" fill="none" />
-            <path d="M 520 330 L 520 420" stroke="#333" strokeWidth="1.5" fill="none" />
-            <path d="M 570 340 L 570 400" stroke="#333" strokeWidth="1.5" fill="none" />
+            {/* Cross connections */}
+            <path d="M 180 400 L 250 400" stroke="#333" strokeWidth="1.5" fill="none" />
+            <path d="M 420 400 L 500 400" stroke="#333" strokeWidth="1.5" fill="none" />
           </svg>
         </div>
       </div>
