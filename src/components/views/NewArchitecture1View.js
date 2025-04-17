@@ -83,7 +83,7 @@ const NewArchitecture1View = () => {
               <span className="font-medium text-white text-sm">DM</span>
             </div>
             <div className="w-[80px] h-[50px] bg-green-700 rounded-md flex items-center justify-center shadow-md border border-green-800">
-              <span className="font-medium text-white text-sm">GS</span>
+              <span className="font-medium text-white text-sm">QS</span>
             </div>
           </div>
           
@@ -207,7 +207,7 @@ const NewArchitecture1View = () => {
                 <span className="font-medium text-white text-xs">Search Service</span>
               </div>
               <div className="w-[90px] h-[40px] bg-blue-800 rounded-md flex items-center justify-center shadow-md border border-blue-900">
-                <span className="font-medium text-white text-xs">MIX</span>
+                <span className="font-medium text-white text-xs">MIX/DCMS</span>
               </div>
               <div className="w-[90px] h-[40px] bg-blue-800 rounded-md flex items-center justify-center shadow-md border border-blue-900">
                 <span className="font-medium text-white text-xs">Misc Service</span>
@@ -222,7 +222,14 @@ const NewArchitecture1View = () => {
                 <span className="font-medium text-white text-xs">Router Service</span>
               </div>
               <div className="w-[90px] h-[40px] bg-blue-800 rounded-md flex items-center justify-center shadow-md border border-blue-900">
-                <span className="font-medium text-white text-xs">DCMS File Repo</span>
+                <a 
+                  href="https://dfnmbe-global-services.directfn.sa/mbe-integration-api/login" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="font-medium text-white text-xs hover:underline"
+                >
+                  Feed API
+                </a>
               </div>
             </div>
           </div>
@@ -368,17 +375,17 @@ const NewArchitecture1View = () => {
             </circle>
             
             {/* 8. Connect Service Cluster, API Services and Kafka with Client Applications */}
-            <path d="M 180 550 L 300 660" stroke="#3b82f6" strokeWidth="2" strokeDasharray="4" fill="none" />
-            <path d="M 600 550 L 500 660" stroke="#3b82f6" strokeWidth="2" strokeDasharray="4" fill="none" />
-            <path d="M 400 550 L 400 660" stroke="#3b82f6" strokeWidth="2" strokeDasharray="4" fill="none" />
+            <path d="M 180 550 L 300 760" stroke="#3b82f6" strokeWidth="2" strokeDasharray="4" fill="none" />
+            <path d="M 600 550 L 500 760" stroke="#3b82f6" strokeWidth="2" strokeDasharray="4" fill="none" />
+            <path d="M 400 550 L 400 760" stroke="#3b82f6" strokeWidth="2" strokeDasharray="4" fill="none" />
             <circle cx="210" cy="580" r="3" fill="#2563eb">
               <animate attributeName="cx" from="180" to="300" dur="2.5s" repeatCount="indefinite" />
-              <animate attributeName="cy" from="550" to="660" dur="2.5s" repeatCount="indefinite" />
+              <animate attributeName="cy" from="550" to="760" dur="2.5s" repeatCount="indefinite" />
               <animate attributeName="opacity" from="1" to="0.3" dur="2.5s" repeatCount="indefinite" />
             </circle>
             <circle cx="570" cy="580" r="3" fill="#2563eb">
               <animate attributeName="cx" from="600" to="500" dur="2.5s" repeatCount="indefinite" />
-              <animate attributeName="cy" from="550" to="660" dur="2.5s" repeatCount="indefinite" />
+              <animate attributeName="cy" from="550" to="760" dur="2.5s" repeatCount="indefinite" />
               <animate attributeName="opacity" from="1" to="0.3" dur="2.5s" repeatCount="indefinite" />
             </circle>
             <circle cx="400" cy="580" r="3" fill="#2563eb">
