@@ -234,7 +234,7 @@ const NewArchitecture1View = () => {
           </div>
           
           {/* Client Applications - Moved further down */}
-          <div className="absolute bottom-[-30px] left-0 right-0 flex justify-center">
+          <div className="absolute bottom-[-10px] left-0 right-0 flex justify-center">
             <div className="w-[350px] h-[70px] bg-gray-200 rounded-lg border border-gray-400 flex items-center justify-center">
               <div className="flex space-x-10">
                 <div className="flex flex-col items-center">
@@ -281,9 +281,9 @@ const NewArchitecture1View = () => {
             <path d="M 400 450 L 600 490" stroke="#333" strokeWidth="1.5" fill="none" />
             
             {/* Bottom connections */}
-            <path d="M 400 550 L 400 680" stroke="#333" strokeWidth="1.5" fill="none" />
-            <path d="M 180 560 L 300 680" stroke="#333" strokeWidth="1.5" fill="none" />
-            <path d="M 600 560 L 500 680" stroke="#333" strokeWidth="1.5" fill="none" />
+            <path d="M 400 550 L 400 660" stroke="#333" strokeWidth="1.5" fill="none" />
+            <path d="M 180 560 L 300 660" stroke="#333" strokeWidth="1.5" fill="none" />
+            <path d="M 600 560 L 500 660" stroke="#333" strokeWidth="1.5" fill="none" />
             
             {/* Cross connections */}
             <path d="M 180 520 L 350 520" stroke="#333" strokeWidth="1.5" fill="none" />
