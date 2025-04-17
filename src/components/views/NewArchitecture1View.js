@@ -221,12 +221,12 @@ const NewArchitecture1View = () => {
               <div className="w-[90px] h-[40px] bg-blue-800 rounded-md flex items-center justify-center shadow-md border border-blue-900">
                 <span className="font-medium text-white text-xs">Router Service</span>
               </div>
-              <div className="w-[90px] h-[40px] bg-blue-800 rounded-md flex items-center justify-center shadow-md border border-blue-900">
+              <div className="w-[90px] h-[40px] bg-blue-800 rounded-md flex items-center justify-center shadow-md border border-blue-900 hover:bg-blue-700 transition-colors">
                 <a 
                   href="https://dfnmbe-global-services.directfn.sa/mbe-integration-api/login" 
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  className="font-medium text-white text-xs hover:underline"
+                  className="font-medium text-white text-xs w-full h-full flex items-center justify-center"
                 >
                   Feed API
                 </a>
