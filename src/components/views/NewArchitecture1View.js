@@ -260,28 +260,90 @@ const NewArchitecture1View = () => {
           {/* Connection Lines - Updated for new component positions */}
           <svg className="absolute inset-0 w-full h-full" style={{ zIndex: 5 }}>
             {/* 1. Connect Exchange Feed with Analyzer */}
-            <path d="M 400 110 L 400 155" stroke="#333" strokeWidth="1.5" fill="none" />
+            <path d="M 400 110 L 400 155" stroke="#22c55e" strokeWidth="2" strokeDasharray="4" fill="none" />
+            <circle cx="400" cy="120" r="3" fill="#16a34a">
+              <animate attributeName="cy" from="110" to="155" dur="1.5s" repeatCount="indefinite" />
+              <animate attributeName="opacity" from="1" to="0.3" dur="1.5s" repeatCount="indefinite" />
+            </circle>
+            <circle cx="400" cy="140" r="3" fill="#16a34a">
+              <animate attributeName="cy" from="110" to="155" dur="1.5s" begin="0.5s" repeatCount="indefinite" />
+              <animate attributeName="opacity" from="1" to="0.3" dur="1.5s" begin="0.5s" repeatCount="indefinite" />
+            </circle>
             
             {/* 2. Connect Analyzer with DM and GS */}
-            <path d="M 400 190 L 400 215" stroke="#333" strokeWidth="1.5" fill="none" />
-            <path d="M 400 215 L 340 215" stroke="#333" strokeWidth="1.5" fill="none" />
-            <path d="M 400 215 L 460 215" stroke="#333" strokeWidth="1.5" fill="none" />
+            <path d="M 400 190 L 400 215" stroke="#16a34a" strokeWidth="2" strokeDasharray="4" fill="none" />
+            <path d="M 400 215 L 340 215" stroke="#16a34a" strokeWidth="2" strokeDasharray="4" fill="none" />
+            <path d="M 400 215 L 460 215" stroke="#16a34a" strokeWidth="2" strokeDasharray="4" fill="none" />
+            <circle cx="400" cy="200" r="3" fill="#15803d">
+              <animate attributeName="cy" from="190" to="215" dur="1s" repeatCount="indefinite" />
+              <animate attributeName="opacity" from="1" to="0.3" dur="1s" repeatCount="indefinite" />
+            </circle>
+            <circle cx="380" cy="215" r="3" fill="#15803d">
+              <animate attributeName="cx" from="400" to="340" dur="1s" repeatCount="indefinite" />
+              <animate attributeName="opacity" from="1" to="0.3" dur="1s" repeatCount="indefinite" />
+            </circle>
+            <circle cx="420" cy="215" r="3" fill="#15803d">
+              <animate attributeName="cx" from="400" to="460" dur="1s" repeatCount="indefinite" />
+              <animate attributeName="opacity" from="1" to="0.3" dur="1s" repeatCount="indefinite" />
+            </circle>
             
             {/* 3. Connect DM,GS with Market Data Processing and Client Tools */}
-            <path d="M 340 225 L 240 250" stroke="#333" strokeWidth="1.5" fill="none" />
-            <path d="M 460 225 L 560 250" stroke="#333" strokeWidth="1.5" fill="none" />
+            <path d="M 340 225 L 240 250" stroke="#0d9488" strokeWidth="2" strokeDasharray="4" fill="none" />
+            <path d="M 460 225 L 560 250" stroke="#0d9488" strokeWidth="2" strokeDasharray="4" fill="none" />
+            <circle cx="310" cy="233" r="3" fill="#0f766e">
+              <animate attributeName="cx" from="340" to="240" dur="1.5s" repeatCount="indefinite" />
+              <animate attributeName="cy" from="225" to="250" dur="1.5s" repeatCount="indefinite" />
+              <animate attributeName="opacity" from="1" to="0.3" dur="1.5s" repeatCount="indefinite" />
+            </circle>
+            <circle cx="490" cy="233" r="3" fill="#0f766e">
+              <animate attributeName="cx" from="460" to="560" dur="1.5s" repeatCount="indefinite" />
+              <animate attributeName="cy" from="225" to="250" dur="1.5s" repeatCount="indefinite" />
+              <animate attributeName="opacity" from="1" to="0.3" dur="1.5s" repeatCount="indefinite" />
+            </circle>
             
             {/* 4. Connect Client Tools and Market Data Processing with System Manager */}
-            <path d="M 240 300 L 400 340" stroke="#333" strokeWidth="1.5" fill="none" />
-            <path d="M 560 300 L 400 340" stroke="#333" strokeWidth="1.5" fill="none" />
+            <path d="M 240 300 L 400 340" stroke="#f59e0b" strokeWidth="2" strokeDasharray="4" fill="none" />
+            <path d="M 560 300 L 400 340" stroke="#f59e0b" strokeWidth="2" strokeDasharray="4" fill="none" />
+            <circle cx="280" cy="310" r="3" fill="#d97706">
+              <animate attributeName="cx" from="240" to="400" dur="2s" repeatCount="indefinite" />
+              <animate attributeName="cy" from="300" to="340" dur="2s" repeatCount="indefinite" />
+              <animate attributeName="opacity" from="1" to="0.3" dur="2s" repeatCount="indefinite" />
+            </circle>
+            <circle cx="520" cy="310" r="3" fill="#d97706">
+              <animate attributeName="cx" from="560" to="400" dur="2s" repeatCount="indefinite" />
+              <animate attributeName="cy" from="300" to="340" dur="2s" repeatCount="indefinite" />
+              <animate attributeName="opacity" from="1" to="0.3" dur="2s" repeatCount="indefinite" />
+            </circle>
             
             {/* 5. Connect System Manager with Data Management */}
-            <path d="M 400 390 L 400 410" stroke="#333" strokeWidth="1.5" fill="none" />
+            <path d="M 400 390 L 400 410" stroke="#9333ea" strokeWidth="2" strokeDasharray="4" fill="none" />
+            <circle cx="400" cy="395" r="3" fill="#7e22ce">
+              <animate attributeName="cy" from="390" to="410" dur="1s" repeatCount="indefinite" />
+              <animate attributeName="opacity" from="1" to="0.3" dur="1s" repeatCount="indefinite" />
+            </circle>
+            <circle cx="400" cy="405" r="3" fill="#7e22ce">
+              <animate attributeName="cy" from="390" to="410" dur="1s" begin="0.5s" repeatCount="indefinite" />
+              <animate attributeName="opacity" from="1" to="0.3" dur="1s" begin="0.5s" repeatCount="indefinite" />
+            </circle>
             
             {/* 6. Connect Data Management with Kafka, Service Cluster, API Services */}
-            <path d="M 400 435 L 400 490" stroke="#333" strokeWidth="1.5" fill="none" />
-            <path d="M 400 435 L 180 490" stroke="#333" strokeWidth="1.5" fill="none" />
-            <path d="M 400 435 L 600 490" stroke="#333" strokeWidth="1.5" fill="none" />
+            <path d="M 400 435 L 400 490" stroke="#8b5cf6" strokeWidth="2" strokeDasharray="4" fill="none" />
+            <path d="M 400 435 L 180 490" stroke="#8b5cf6" strokeWidth="2" strokeDasharray="4" fill="none" />
+            <path d="M 400 435 L 600 490" stroke="#8b5cf6" strokeWidth="2" strokeDasharray="4" fill="none" />
+            <circle cx="400" cy="450" r="3" fill="#7c3aed">
+              <animate attributeName="cy" from="435" to="490" dur="1.5s" repeatCount="indefinite" />
+              <animate attributeName="opacity" from="1" to="0.3" dur="1.5s" repeatCount="indefinite" />
+            </circle>
+            <circle cx="350" cy="450" r="3" fill="#7c3aed">
+              <animate attributeName="cx" from="400" to="180" dur="1.5s" repeatCount="indefinite" />
+              <animate attributeName="cy" from="435" to="490" dur="1.5s" repeatCount="indefinite" />
+              <animate attributeName="opacity" from="1" to="0.3" dur="1.5s" repeatCount="indefinite" />
+            </circle>
+            <circle cx="450" cy="450" r="3" fill="#7c3aed">
+              <animate attributeName="cx" from="400" to="600" dur="1.5s" repeatCount="indefinite" />
+              <animate attributeName="cy" from="435" to="490" dur="1.5s" repeatCount="indefinite" />
+              <animate attributeName="opacity" from="1" to="0.3" dur="1.5s" repeatCount="indefinite" />
+            </circle>
             
             {/* 7. Connect Service Cluster and API Services with Kafka */}
             <path d="M 180 520 L 400 520" stroke="#4f46e5" strokeWidth="2" strokeDasharray="4" fill="none" />
@@ -306,9 +368,27 @@ const NewArchitecture1View = () => {
             </circle>
             
             {/* 8. Connect Service Cluster, API Services and Kafka with Client Applications */}
-            <path d="M 180 550 L 300 660" stroke="#333" strokeWidth="1.5" fill="none" />
-            <path d="M 600 550 L 500 660" stroke="#333" strokeWidth="1.5" fill="none" />
-            <path d="M 400 550 L 400 660" stroke="#333" strokeWidth="1.5" fill="none" />
+            <path d="M 180 550 L 300 660" stroke="#3b82f6" strokeWidth="2" strokeDasharray="4" fill="none" />
+            <path d="M 600 550 L 500 660" stroke="#3b82f6" strokeWidth="2" strokeDasharray="4" fill="none" />
+            <path d="M 400 550 L 400 660" stroke="#3b82f6" strokeWidth="2" strokeDasharray="4" fill="none" />
+            <circle cx="210" cy="580" r="3" fill="#2563eb">
+              <animate attributeName="cx" from="180" to="300" dur="2.5s" repeatCount="indefinite" />
+              <animate attributeName="cy" from="550" to="660" dur="2.5s" repeatCount="indefinite" />
+              <animate attributeName="opacity" from="1" to="0.3" dur="2.5s" repeatCount="indefinite" />
+            </circle>
+            <circle cx="570" cy="580" r="3" fill="#2563eb">
+              <animate attributeName="cx" from="600" to="500" dur="2.5s" repeatCount="indefinite" />
+              <animate attributeName="cy" from="550" to="660" dur="2.5s" repeatCount="indefinite" />
+              <animate attributeName="opacity" from="1" to="0.3" dur="2.5s" repeatCount="indefinite" />
+            </circle>
+            <circle cx="400" cy="580" r="3" fill="#2563eb">
+              <animate attributeName="cy" from="550" to="660" dur="2.5s" repeatCount="indefinite" />
+              <animate attributeName="opacity" from="1" to="0.3" dur="2.5s" repeatCount="indefinite" />
+            </circle>
+            <circle cx="400" cy="610" r="3" fill="#2563eb">
+              <animate attributeName="cy" from="550" to="660" dur="2.5s" begin="1s" repeatCount="indefinite" />
+              <animate attributeName="opacity" from="1" to="0.3" dur="2.5s" begin="1s" repeatCount="indefinite" />
+            </circle>
           </svg>
         </div>
       </div>
