@@ -102,15 +102,13 @@ const TeamView = () => {
       
       {/* Team Image Section */}
       <div className="mb-8">
-        <div className="relative w-full h-64 md:h-80 bg-gradient-to-r from-blue-100 to-indigo-100 rounded-lg overflow-hidden">
-          {/* Placeholder for team image */}
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="text-center">
-              <Users size={64} className="mx-auto text-blue-300 mb-4" />
-              <p className="text-blue-600 font-medium">DirectFN Market Data Team</p>
-              <p className="text-sm text-blue-400">Building the future of financial data infrastructure</p>
-            </div>
-          </div>
+        <div className="relative w-full h-64 md:h-80 rounded-lg overflow-hidden">
+          {/* Team image */}
+          <img 
+            src="/team.png" 
+            alt="DirectFN Market Data Team" 
+            className="w-full h-full object-cover"
+          />
           
           {/* Overlay with quote */}
           <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-blue-900/70 to-transparent p-4">
