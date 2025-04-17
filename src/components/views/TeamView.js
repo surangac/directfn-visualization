@@ -105,7 +105,7 @@ const TeamView = () => {
         <div className="relative w-full h-64 md:h-80 rounded-lg overflow-hidden">
           {/* Team image */}
           <img 
-            src="/team.png" 
+            src={`${process.env.PUBLIC_URL}/team.png`}
             alt="DirectFN Market Data Team" 
             className="w-full h-full object-cover"
           />
