@@ -389,6 +389,34 @@ const NewArchitecture1View = () => {
               <animate attributeName="cy" from="550" to="660" dur="2.5s" begin="1s" repeatCount="indefinite" />
               <animate attributeName="opacity" from="1" to="0.3" dur="2.5s" begin="1s" repeatCount="indefinite" />
             </circle>
+            
+            {/* 9. Connect Auth Component with Client Applications and Price DB */}
+            <path d="M 710 345 L 400 760" stroke="#dc2626" strokeWidth="2" strokeDasharray="4" fill="none" />
+            <path d="M 710 345 L 584 390" stroke="#dc2626" strokeWidth="2" strokeDasharray="4" fill="none" />
+            
+            {/* Auth to Client Applications Animations */}
+            <circle cx="630" cy="460" r="3" fill="#b91c1c">
+              <animate attributeName="cx" from="710" to="400" dur="3s" repeatCount="indefinite" />
+              <animate attributeName="cy" from="345" to="760" dur="3s" repeatCount="indefinite" />
+              <animate attributeName="opacity" from="1" to="0.3" dur="3s" repeatCount="indefinite" />
+            </circle>
+            <circle cx="550" cy="580" r="3" fill="#b91c1c">
+              <animate attributeName="cx" from="710" to="400" dur="3s" begin="1.5s" repeatCount="indefinite" />
+              <animate attributeName="cy" from="345" to="760" dur="3s" begin="1.5s" repeatCount="indefinite" />
+              <animate attributeName="opacity" from="1" to="0.3" dur="3s" begin="1.5s" repeatCount="indefinite" />
+            </circle>
+            
+            {/* Auth to Price DB Animations */}
+            <circle cx="670" cy="358" r="3" fill="#b91c1c">
+              <animate attributeName="cx" from="710" to="584" dur="1.2s" repeatCount="indefinite" />
+              <animate attributeName="cy" from="345" to="390" dur="1.2s" repeatCount="indefinite" />
+              <animate attributeName="opacity" from="1" to="0.3" dur="1.2s" repeatCount="indefinite" />
+            </circle>
+            <circle cx="640" cy="370" r="3" fill="#b91c1c">
+              <animate attributeName="cx" from="710" to="584" dur="1.2s" begin="0.6s" repeatCount="indefinite" />
+              <animate attributeName="cy" from="345" to="390" dur="1.2s" begin="0.6s" repeatCount="indefinite" />
+              <animate attributeName="opacity" from="1" to="0.3" dur="1.2s" begin="0.6s" repeatCount="indefinite" />
+            </circle>
           </svg>
         </div>
       </div>
