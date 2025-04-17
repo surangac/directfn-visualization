@@ -440,7 +440,7 @@ const NewArchitecture1View = () => {
           <div className="bg-white p-4 rounded-lg border border-gray-200 shadow-sm">
             <h4 className="font-medium text-blue-700 mb-2 flex items-center">
               <Zap size={18} className="text-yellow-500 mr-2" />
-              Microservices Architecture
+              API first Microservices Architecture
             </h4>
             <ul className="list-disc list-inside text-sm text-gray-700 space-y-1">
               <li>Domain-driven service boundaries with clear responsibilities</li>
