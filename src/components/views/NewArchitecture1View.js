@@ -43,7 +43,7 @@ const NewArchitecture1View = () => {
       </div>
       
       {/* Architecture Diagram - Based on the attached image */}
-      <div className="relative w-full h-[780px] bg-gradient-to-b from-blue-50 to-indigo-50 rounded-lg border border-blue-200 mb-6 overflow-hidden">
+      <div className="relative w-full h-[800px] bg-gradient-to-b from-blue-50 to-indigo-50 rounded-lg border border-blue-200 mb-6 overflow-hidden">
         <div className="absolute inset-0 p-4">
           {/* Title */}
           <div className="absolute top-[10px] left-0 right-0 flex justify-center">
