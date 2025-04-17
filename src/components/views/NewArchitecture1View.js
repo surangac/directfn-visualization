@@ -222,14 +222,7 @@ const NewArchitecture1View = () => {
                 <span className="font-medium text-white text-xs">Router Service</span>
               </div>
               <div className="w-[90px] h-[40px] bg-blue-800 rounded-md flex items-center justify-center shadow-md border border-blue-900 hover:bg-blue-700 transition-colors">
-                <a 
-                  href="https://dfnmbe-global-services.directfn.sa/mbe-integration-api/login" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="font-medium text-white text-xs w-full h-full flex items-center justify-center"
-                >
-                  Feed API
-                </a>
+                <span className="font-medium text-white text-xs">Feed API</span>
               </div>
             </div>
           </div>
@@ -402,7 +395,19 @@ const NewArchitecture1View = () => {
       
       {/* Technical Highlights for Tech Staff */}
       <div className="mb-6">
-        <h3 className="text-lg font-bold text-blue-800 mb-3">Technical Highlights</h3>
+        <div className="flex justify-between items-center mb-3">
+          <h3 className="text-lg font-bold text-blue-800">Technical Highlights</h3>
+          <a 
+            href="https://dfnmbe-global-services.directfn.sa/mbe-integration-api/login" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="bg-blue-600 hover:bg-blue-700 text-white text-sm px-4 py-2 rounded flex items-center transition-colors"
+          >
+            <Zap size={16} className="mr-1" />
+            Feed API
+          </a>
+        </div>
+        
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="bg-white p-4 rounded-lg border border-gray-200 shadow-sm">
             <h4 className="font-medium text-blue-700 mb-2 flex items-center">
