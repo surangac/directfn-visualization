@@ -28,17 +28,17 @@ const MarketDataFlow = () => {
         >
           Legacy Architecture
         </button>
-        <button 
+        {/* <button 
           onClick={() => setViewMode('new')} 
           className={`px-4 py-2 rounded-md font-medium ${viewMode === 'new' ? 'bg-blue-600 text-white' : 'bg-white border border-gray-300'}`}
         >
           Modern Architecture
-        </button>
+        </button> */}
         <button 
           onClick={() => setViewMode('new1')} 
           className={`px-4 py-2 rounded-md font-medium ${viewMode === 'new1' ? 'bg-indigo-600 text-white' : 'bg-white border border-gray-300'}`}
         >
-          Executive Overview
+          Modern Architecture
         </button>
         <button 
           onClick={() => setViewMode('flow')} 
