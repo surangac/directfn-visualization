@@ -47,17 +47,17 @@ const MarketDataFlow = () => {
           Data Flow
         </button>
         <button 
-          onClick={() => setViewMode('coverage')} 
-          className={`px-4 py-2 rounded-md font-medium ${viewMode === 'coverage' ? 'bg-green-600 text-white' : 'bg-white border border-gray-300'}`}
-        >
-          Coverage
-        </button>
-        <button 
           onClick={() => setViewMode('clients')} 
           className={`px-4 py-2 rounded-md font-medium ${viewMode === 'clients' ? 'bg-yellow-600 text-white' : 'bg-white border border-gray-300'}`}
         >
           Products & Clients
         </button>
+        <button 
+          onClick={() => setViewMode('coverage')} 
+          className={`px-4 py-2 rounded-md font-medium ${viewMode === 'coverage' ? 'bg-green-600 text-white' : 'bg-white border border-gray-300'}`}
+        >
+          Coverage
+        </button>        
         <button 
           onClick={() => setViewMode('revenue')} 
           className={`px-4 py-2 rounded-md font-medium ${viewMode === 'revenue' ? 'bg-emerald-600 text-white' : 'bg-white border border-gray-300'}`}
